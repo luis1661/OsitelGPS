@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-entelgps",
+  "version": "0.0.1",
+  "description": "Entel GPS",
+  "cordova": {
+    "id": "cordova-plugin-entelgps",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luis1661/OsitelGPS.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Gerson Peralta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luis1661/OsitelGPS/issues"
+  },
+  "homepage": "https://github.com/luis1661/OsitelGPS#readme"
+}

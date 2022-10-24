@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://gitlab.com/api/v4/projects/39338888/packages/maven"
+        }
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+android {
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url "https://gitlab.com/api/v4/projects/39338888/packages/maven"
+        }
+    }
+}
+
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url 'https://maven.google.com' }
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://jitpack.io'}
+
+    flatDir { dirs 'src/main/libs' }
+   
+      flatDir { dirs 'libs' }
+
+}
+
+
+
+
+
+dependencies {
+    implementation 'com.axiros.axmobility:android.isp_qos:001'
+}
+
