@@ -11,7 +11,7 @@
 			</feature>
 		</config-file>
 		<config-file parent="/*" target="AndroidManifest.xml" />
-		<source-file src="src/android/EntelGPS.java" target-dir="src/cordova-plugin-miplugin/EntelGPS" />
+		<source-file src="src/android/EntelGPS.java" target-dir="src/cordova.plugin.miplugin/EntelGPS" />
 		<framework src="src/android/resource/build-extras.gradle" custom="true" type="gradleReference" />
 	</platform>
 </plugin>
