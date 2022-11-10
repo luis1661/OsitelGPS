@@ -10,7 +10,15 @@
 				<param name="android-package" value="cordova.plugin.miplugin.EntelGPS" />
 			</feature>
 		</config-file>
-		<config-file parent="/*" target="AndroidManifest.xml" />
+		<config-file parent="/*" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+			<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+			<uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+			<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+		</config-file>
 		<source-file src="src/android/EntelGPS.java" target-dir="src/cordova.plugin.miplugin/EntelGPS" />
 		<framework src="src/android/resource/build-extras.gradle" custom="true" type="gradleReference" />
 	</platform>
