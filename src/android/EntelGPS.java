@@ -34,8 +34,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
-import io.cordova.hellocordova.BuildConfig;
-
 /**
  * This class echoes a string called from JavaScript.
  */
